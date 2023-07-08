@@ -3,9 +3,77 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 40px 0;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+&__list-item {
+    margin-left: 40px;
+  }
+
+  &__list-link {
+    padding-bottom: 2px;
+    transition: all .3s;
+    color: $title;
+    @extend %quicksand-500;
+  }
+
+  &__list-link:hover,
+  &__list-link--active {
+    color: $accent;
+    border-bottom: 1px solid $accent;
+  }
+}
+
+.user-nav {
+  display: flex;
+  margin-top: 10px;
+
+  &__link {
+    position: relative;
+
+    path {
+      transition: all .3s;
+    }
+  }
+
+  &__link:hover path {
+    fill: $accent;
+  }
+
+  &__link+&__link {
+    margin-left: 25px;
+  }
+
+  &__num {
+    position: absolute;
+    background-color: $accent;
+    border-radius: 50%;
+    color: #fff;
+    top: -9px;
+    right: -16px;
+    font-size: 14px;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    line-height: 21px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+}
 
 
 
 @import 'media';
-

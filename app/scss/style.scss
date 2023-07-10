@@ -4,13 +4,17 @@
 @import 'global';
 
 .header {
-  padding: 40px 0;
+  padding: 35px 0;
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.logo__img {
+  width: 174px;
 }
 
 .menu {
@@ -26,13 +30,11 @@
     padding-bottom: 2px;
     transition: all .3s;
     color: $title;
-    @extend %quicksand-500;
   }
 
   &__list-link:hover,
   &__list-link--active {
     color: $accent;
-    border-bottom: 1px solid $accent;
   }
 }
 
@@ -68,12 +70,142 @@
     height: 21px;
     text-align: center;
     line-height: 21px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
   }
 }
 
+.footer {
+  background-color: $bg;
+}
+
+.footer-top {
+  padding: 35px 0;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+
+  &__contact {
+    width: 250px;
+    margin-right: 50px;
+  }
+
+  &__logo {
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  &__address,
+  &__email,
+  &__phone {
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &__social-item+&__social-item {
+    margin-left: 18px;
+  }
+
+  &__social-link path {
+    fill: $default;
+    transition: all .3s;
+  }
+
+  &__social-link:hover path {
+    fill: $accent;
+  }
+
+  &__nav {
+    width: 170px;
+    margin-right: 30px;
+  }
+
+  &__title {
+    color: $title;
+    @extend %roboto-400;
+    margin: 21px 0 32px;
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  &__list-link {
+    display: block;
+    margin-bottom: 6px;
+    transition: all .3s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__item-form {
+    max-width: 470px;
+  }
+
+  &__text {
+    margin-bottom: 28px;
+  }
+
+  &__form-input {
+    max-width: 340px;
+    width: 100%;
+    border: none;
+    padding: 10px 15px;
+    height: 40px;
+    margin-right: 10px;
+    filter: drop-shadow(0px 7px 10px rgba(192, 192, 192, 0.3));
+
+    &::placeholder {
+      color: $default;
+    }
+  }
+
+  &__form-btn {
+    border: none;
+    background-color: #fff;
+    color: $default;
+    padding: 6px 8px;
+    filter: drop-shadow(0px 7px 10px rgba(192, 192, 192, 0.3));
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0;
+
+  &__accept {
+    display: flex;
+    align-items: center;
+  }
+
+  &__accept-text {
+    margin-right: 25px;
+  }
+
+  &__accept-list {
+    display: flex;
+  }
+
+  &__accept-item+&__accept-item {
+    margin-left: 25px;
+  }
+}
 
 
 @import 'media';

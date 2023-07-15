@@ -5,7 +5,7 @@
 @import 'global';
 
 .header {
-  padding: 35px 0;
+  padding: 20px 0;
 
   &__inner {
     display: flex;
@@ -220,10 +220,7 @@
   }
 
   &__title {
-    font-size: 36px;
-    line-height: 54px;
-    color: $title;
-    @extend %roboto-700;
+    text-align: left;
     margin: 140px 0 20px;
   }
 
@@ -284,6 +281,64 @@
         background-color: $accent;
       }
     }
+  }
+}
+
+.info-categories {
+  padding: 40px 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+  &__item {
+    padding: 25px;
+    filter: drop-shadow(20px 0px 30px rgba(202, 202, 202, 0.35));
+    background-color: #fff;
+    width: 370px;
+  }
+
+  &__item-title {
+    margin: 10px 0;
+    color: $title;
+    font-size: 20px;
+    line-height: 30px;
+    @extend %roboto-400;
+  }
+}
+
+.categories {
+  &__items {
+    display: grid;
+    min-height: 560px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  &__item {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color: $bg;
+    padding: 25px;
+    transition: all .3s;
+
+    &:hover {
+      background-color: #ececec;
+    }
+  }
+
+  &__item-title {
+    color: $title;
+    font-size: 20px;
+    line-height: 30px;
+    @extend %roboto-400;
+    transition: all .3s;
+  }
+
+  &__item:hover &__item-title {
+    color: $accent;
   }
 }
 

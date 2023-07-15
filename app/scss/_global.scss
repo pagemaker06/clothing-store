@@ -29,3 +29,17 @@ a {
   @extend %quicksand-500;
 }
 
+.title {
+  text-align: center;
+  @extend %roboto-700;
+  font-size: 36px;
+  line-height: 54px;
+  color: $title;
+  margin-bottom: 10px;
+}
+
+.text {
+  text-align: center;
+  max-width: 570px;
+  margin: 0 auto 45px;
+}

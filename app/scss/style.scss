@@ -312,9 +312,9 @@
 .categories {
   &__items {
     display: grid;
-    min-height: 515px;
+    min-height: 510px;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 25px;
   }
 
   &__item {
@@ -367,7 +367,7 @@
     transition: all .3s;
 
     &:hover {
-      transform: scale(0.9);
+      transform: scale(0.91);
     }
   }
 
@@ -381,7 +381,7 @@
 
   &__title {
     text-align: left;
-    margin: 60px 0 40px;
+    margin: 30px 0;
   }
 
   &__text {
@@ -390,6 +390,82 @@
 
   &__link {
     @extend %btn;
+  }
+}
+
+.product {
+  padding: 60px 0;
+  text-align: center;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 20px;
+  }
+
+  &__link {
+    @extend %btn;
+    display: inline-block;
+    margin-top: 40px;
+  }
+}
+
+.product-item {
+  max-width: 370px;
+
+  &__link {
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  &__img {
+    height: 430px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.9s;
+  }
+
+  &__link:hover &__img {
+    transform: scale(1.05);
+  }
+
+  &__title {
+    color: $title;
+    font-size: 20px;
+    line-height: 30px;
+    @extend %roboto-400;
+    margin: 12px 0 1px;
+    display: inline-block;
+    transition: all .3s;
+  }
+
+  &__name:hover &__title {
+    color: $accent;
+  }
+
+  &__buying {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__price {
+    margin-right: 20px;
+    color: $title;
+    font-size: 18px;
+  }
+
+  &__buying-link {
+    margin-top: 8px;
+
+    path {
+      transition: all .3s;
+    }
+
+    &:hover path {
+      fill: $accent;
+    }
   }
 }
 

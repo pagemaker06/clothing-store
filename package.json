@@ -21,7 +21,9 @@
     "gulp-sass": "^5.1.0",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.7.0",
+    "jquery-form-styler": "^2.0.2",
     "sass": "^1.63.5",
     "slick-carousel": "^1.8.1"
   }

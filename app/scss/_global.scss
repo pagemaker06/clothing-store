@@ -4,7 +4,6 @@ body {
 }
 
 body {
-  color: $default;
   font-size: 17px;
   line-height: 26px;
   @extend %quicksand-500;
@@ -23,7 +22,7 @@ body {
 }
 
 a {
-  color: $default;
+  color: #000;
   font-size: 17px;
   line-height: 26px;
   @extend %quicksand-500;
@@ -42,4 +41,53 @@ a {
   text-align: center;
   max-width: 570px;
   margin: 0 auto 45px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+
+  .pagination__list {
+    display: flex;
+    padding: 0 9px;
+  }
+
+  &__item {
+    padding: 0 9px;
+  }
+
+  &__link--active {
+    color: $accent;
+  }
+
+  &__arrows {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 10px;
+      top: 9px;
+    }
+  }
+
+  &__prev {
+    padding-left: 15px;
+
+    &::before {
+      background-image: url('../images/icons/angle-prev.svg');
+      left: 0;
+    }
+  }
+
+  &__next {
+    padding-right: 15px;
+
+    &::before {
+      background-image: url('../images/icons/angle-next.svg');
+      right: 0;
+    }
+  }
 }

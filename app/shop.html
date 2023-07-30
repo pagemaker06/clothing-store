@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop page</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo header__logo" href="#">
+          <img class="logo__img" src="images/logo.jpg" alt="logo">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                HOME
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                SHOP
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                PAGE
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                BLOG
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                CONTACT
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link" href="#">
+            <svg version="1.2" viewBox="0 0 20 20" width="20" height="20">
+              <path fill-rule="evenodd" fill="#29282d"
+                d="m17.1 12.9c-1.1-1.1-2.4-1.9-3.8-2.4 1.5-1 2.5-2.7 2.5-4.7 0-3.2-2.6-5.8-5.8-5.8-3.2 0-5.8 2.6-5.8 5.8 0 2 1 3.7 2.5 4.7-1.4 0.5-2.7 1.3-3.8 2.4-1.9 1.9-2.9 4.4-2.9 7.1h1.6c0-4.7 3.7-8.4 8.4-8.4 4.7 0 8.4 3.7 8.4 8.4h1.6c0-2.7-1-5.2-2.9-7.1zm-11.3-7.1c0-2.3 1.9-4.2 4.2-4.2 2.3 0 4.2 1.9 4.2 4.2 0 2.3-1.9 4.2-4.2 4.2-2.3 0-4.2-1.9-4.2-4.2z" />
+            </svg>
+          </a>
+          <a class="user-nav__link" href="#">
+            <svg version="1.2" viewBox="0 0 20 20" width="20" height="20">
+              <path fill-rule="evenodd" fill="#29282d"
+                d="m19.9 18.7l-5.8-5.8c1.1-1.4 1.7-3.1 1.7-5 0-4.4-3.5-7.9-7.9-7.9-4.3 0-7.9 3.5-7.9 7.9 0 4.4 3.6 7.9 7.9 7.9 1.9 0 3.6-0.6 5-1.7l5.8 5.8c0.2 0.1 0.4 0.1 0.6 0l0.6-0.6c0.2-0.2 0.2-0.4 0-0.6zm-12-4.5c-3.4 0-6.2-2.8-6.2-6.3 0-3.4 2.8-6.2 6.2-6.2 3.5 0 6.3 2.8 6.3 6.2 0 3.5-2.8 6.3-6.3 6.3z" />
+            </svg>
+          </a>
+          <a class="user-nav__link" href="#">
+            <svg version="1.2" viewBox="0 0 22 20" width="22" height="20">
+              <path fill-rule="evenodd" fill="#29282d"
+                d="m17.4 20c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1zm1.8-2.8h-12.8c-0.4 0-0.7-0.3-0.8-0.7l-2.7-11.1h-2.1c-0.4 0-0.8-0.3-0.8-0.8 0-0.4 0.4-0.8 0.8-0.8h2.8c0.3 0 0.7 0.3 0.8 0.6l0.7 3.1h16.1c0.2 0 0.5 0.1 0.6 0.3 0.2 0.2 0.3 0.5 0.2 0.7l-2 8.1c-0.1 0.3-0.4 0.6-0.8 0.6zm-12.2-1.7h11.5l1.6-6.4h-14.6zm0.4 8.3c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1z" />
+            </svg>
+            <span class="user-nav__num">6</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="page">
+      <div class="page__container">
+        <div class="container">
+          <h3 class="title page__title">
+            Shop page
+          </h3>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link">
+                  Shop page
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <div class="shop__filters filter">
+            <div class="filter__item filter-search">
+              <h4 class="filter__title">
+                Search
+              </h4>
+              <form class="filter-search__form" action="#">
+                <input class="filter-search__input" type="text" placeholder="Search by keyword">
+                <button class="filter-search__btn" type="submit">
+                  <svg version="1.2" viewBox="0 0 20 20" width="20" height="20">
+                    <path fill-rule="evenodd" fill="#29282d"
+                      d="m19.9 18.7l-5.8-5.8c1.1-1.4 1.7-3.1 1.7-5 0-4.4-3.5-7.9-7.9-7.9-4.3 0-7.9 3.5-7.9 7.9 0 4.4 3.6 7.9 7.9 7.9 1.9 0 3.6-0.6 5-1.7l5.8 5.8c0.2 0.1 0.4 0.1 0.6 0l0.6-0.6c0.2-0.2 0.2-0.4 0-0.6zm-12-4.5c-3.4 0-6.2-2.8-6.2-6.3 0-3.4 2.8-6.2 6.2-6.2 3.5 0 6.3 2.8 6.3 6.2 0 3.5-2.8 6.3-6.3 6.3z" />
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="filter__item filter-category">
+              <h4 class="filter__title">
+                Category
+              </h4>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox">
+                    Woman
+                  </span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox">
+                    Man
+                  </span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox">
+                    Kids
+                  </span>
+                </label>
+              </form>
+            </div>
+            <div class="filter__item filter-price">
+              <h4 class="filter__title">
+                Price filter
+              </h4>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-prefix="$" data-min="0" data-max="999"
+                  data-from="60" data-to="700">
+                <label class="filter-price__label">
+                  <span>
+                    Price:
+                    $<span class="filter-price__from">
+                    </span>
+                    --
+                    $<span class="filter-price__to">
+                    </span>
+                  </span>
+                  <button class="filter-price__btn" type="submit">
+                    Filter
+                  </button>
+                </label>
+              </form>
+            </div>
+            <div class="filter__item filter-size">
+              <h4 class="filter__title">
+                Size filter
+              </h4>
+              <form class="filter-size__form" action="#">
+                <label class="filter-size__label">
+                  <input class="filter-size__input" type="checkbox">
+                  <span class="filter-size__checkbox">
+                  </span>
+                  <span class="filter-size__text">
+                    X-Small
+                  </span>
+                </label>
+                <label class="filter-size__label">
+                  <input class="filter-size__input" type="checkbox">
+                  <span class="filter-size__checkbox">
+                  </span>
+                  <span class="filter-size__text">
+                    Small
+                  </span>
+                </label>
+                <label class="filter-size__label">
+                  <input class="filter-size__input" type="checkbox">
+                  <span class="filter-size__checkbox">
+                  </span>
+                  <span class="filter-size__text">
+                    Medium
+                  </span>
+                </label>
+                <label class="filter-size__label">
+                  <input class="filter-size__input" type="checkbox">
+                  <span class="filter-size__checkbox">
+                  </span>
+                  <span class="filter-size__text">
+                    Large
+                  </span>
+                </label>
+                <label class="filter-size__label">
+                  <input class="filter-size__input" type="checkbox">
+                  <span class="filter-size__checkbox">
+                  </span>
+                  <span class="filter-size__text">
+                    X-Large
+                  </span>
+                </label>
+                <label class="filter-size__label">
+                  <input class="filter-size__input" type="checkbox">
+                  <span class="filter-size__checkbox">
+                  </span>
+                  <span class="filter-size__text">
+                    XX-Large
+                  </span>
+                </label>
+              </form>
+            </div>
+            <div class="filter__item filter-color">
+              <h4 class="filter__title">
+                Color filter
+              </h4>
+              <form class="filter-color__form" action="#">
+                <label class="filter-color__label">
+                  <span class="filter-color__text">
+                    Red
+                  </span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox filter-color__checkbox--red">
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">
+                    Orange
+                  </span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox filter-color__checkbox--orange">
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">
+                    Yellow
+                  </span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox filter-color__checkbox--yellow">
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">
+                    Green
+                  </span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox filter-color__checkbox--green">
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">
+                    Blue
+                  </span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox filter-color__checkbox--blue">
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">
+                    Purple
+                  </span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox filter-color__checkbox--purple">
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">
+                    White
+                  </span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox filter-color__checkbox--white">
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">
+                    Black
+                  </span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox filter-color__checkbox--black">
+                    </span>
+                  </div>
+                </label>
+              </form>
+            </div>
+          </div>
+          <div class="shop-content">
+            <div class="shop-content__filter">
+              <div class="shop-content__filter-buttons">
+                <span>
+                  View
+                </span>
+                <button class="shop-content__filter-btn shop-content__filter-btn--active button-grid">
+                  <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" width="15" height="15">
+                    <path fill-rule="evenodd" fill="#000"
+                      d="m0 3.7h3.7v-3.7h-3.7zm5.6 11.2h3.8v-3.7h-3.8zm-5.6 0h3.7v-3.8h-3.7zm0-5.6h3.7v-3.7h-3.7zm5.6 0h3.8v-3.8h-3.8zm5.6-9.4v3.8h3.8v-3.8zm-5.6 3.8h3.7v-3.8h-3.7zm5.6 5.7h3.7v-3.8h-3.7zm0 5.6h3.7v-3.7h-3.7z" />
+                  </svg>
+                </button>
+                <button class="shop-content__filter-btn button-list">
+                  <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15" width="20" height="15">
+                    <path fill="#000"
+                      d="m0 0h4.4v4.2h-4.4zm5.8 0h14.2v4.1h-14.2zm-5.8 5.5h4.4v4.1h-4.4zm5.8 0h14.2v4.2h-14.2zm-5.8 5.4h4.4v4.2h-4.4zm5.8 0h14.2v4.2h-14.2z" />
+                  </svg>
+                </button>
+              </div>
+              <form class="shop-content__filter-form" action="#">
+                <select class="shop-content__filter-sort">
+                  <option value="">
+                    Sort by: Price: low to high
+                  </option>
+                  <option value="">
+                    Sort by: Price: high to low
+                  </option>
+                  <option value="">
+                    Sort by: Newest arrivals
+                  </option>
+                  <option value="">
+                    Sort by: Best sellers
+                  </option>
+                </select>
+              </form>
+            </div>
+            <div class="shop-content__inner">
+              <div class="product-item">
+                <a class="product-item__link" href="#">
+                  <img class="product-item__img" src="images/product/1.jpg" alt="product">
+                </a>
+                <div class="product-item__box">
+                  <a class="product-item__name" href="#">
+                    <h4 class="product-item__title">
+                      Women's clothing
+                    </h4>
+                  </a>
+                  <div class="product-item__buying">
+                    <div class="product-item__price">
+                      $39.00
+                    </div>
+                    <a class="product-item__buying-link" href="#">
+                      <svg version="1.2" viewBox="0 0 22 20" width="22" height="20">
+                        <path fill-rule="evenodd" fill="#29282d"
+                          d="m17.4 20c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1zm1.8-2.8h-12.8c-0.4 0-0.7-0.3-0.8-0.7l-2.7-11.1h-2.1c-0.4 0-0.8-0.3-0.8-0.8 0-0.4 0.4-0.8 0.8-0.8h2.8c0.3 0 0.7 0.3 0.8 0.6l0.7 3.1h16.1c0.2 0 0.5 0.1 0.6 0.3 0.2 0.2 0.3 0.5 0.2 0.7l-2 8.1c-0.1 0.3-0.4 0.6-0.8 0.6zm-12.2-1.7h11.5l1.6-6.4h-14.6zm0.4 8.3c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1z" />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="product-item__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus vitae quis aut rerum quas
+                    iusto quod perspiciatis nemo, necessitatibus voluptatibus iure dolore consequatur quaerat saepe
+                    omnis atque alias expedita.
+                  </p>
+                  <button class="product-item__btn">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link" href="#">
+                  <img class="product-item__img" src="images/product/2.jpg" alt="product">
+                </a>
+                <div class="product-item__box">
+                  <a class="product-item__name" href="#">
+                    <h4 class="product-item__title">
+                      Men's clothing
+                    </h4>
+                  </a>
+                  <div class="product-item__buying">
+                    <div class="product-item__price">
+                      $39.00
+                    </div>
+                    <a class="product-item__buying-link" href="#">
+                      <svg version="1.2" viewBox="0 0 22 20" width="22" height="20">
+                        <path fill-rule="evenodd" fill="#29282d"
+                          d="m17.4 20c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1zm1.8-2.8h-12.8c-0.4 0-0.7-0.3-0.8-0.7l-2.7-11.1h-2.1c-0.4 0-0.8-0.3-0.8-0.8 0-0.4 0.4-0.8 0.8-0.8h2.8c0.3 0 0.7 0.3 0.8 0.6l0.7 3.1h16.1c0.2 0 0.5 0.1 0.6 0.3 0.2 0.2 0.3 0.5 0.2 0.7l-2 8.1c-0.1 0.3-0.4 0.6-0.8 0.6zm-12.2-1.7h11.5l1.6-6.4h-14.6zm0.4 8.3c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1z" />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="product-item__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus vitae quis aut rerum quas
+                    iusto quod perspiciatis nemo, necessitatibus voluptatibus iure dolore consequatur quaerat saepe
+                    omnis atque alias expedita.
+                  </p>
+                  <button class="product-item__btn">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link" href="#">
+                  <img class="product-item__img" src="images/product/3.jpg" alt="product">
+                </a>
+                <div class="product-item__box">
+                  <a class="product-item__name" href="#">
+                    <h4 class="product-item__title">
+                      Women's clothing
+                    </h4>
+                  </a>
+                  <div class="product-item__buying">
+                    <div class="product-item__price">
+                      $39.00
+                    </div>
+                    <a class="product-item__buying-link" href="#">
+                      <svg version="1.2" viewBox="0 0 22 20" width="22" height="20">
+                        <path fill-rule="evenodd" fill="#29282d"
+                          d="m17.4 20c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1zm1.8-2.8h-12.8c-0.4 0-0.7-0.3-0.8-0.7l-2.7-11.1h-2.1c-0.4 0-0.8-0.3-0.8-0.8 0-0.4 0.4-0.8 0.8-0.8h2.8c0.3 0 0.7 0.3 0.8 0.6l0.7 3.1h16.1c0.2 0 0.5 0.1 0.6 0.3 0.2 0.2 0.3 0.5 0.2 0.7l-2 8.1c-0.1 0.3-0.4 0.6-0.8 0.6zm-12.2-1.7h11.5l1.6-6.4h-14.6zm0.4 8.3c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1z" />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="product-item__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus vitae quis aut rerum quas
+                    iusto quod perspiciatis nemo, necessitatibus voluptatibus iure dolore consequatur quaerat saepe
+                    omnis atque alias expedita.
+                  </p>
+                  <button class="product-item__btn">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link" href="#">
+                  <img class="product-item__img" src="images/product/4.jpg" alt="product">
+                </a>
+                <div class="product-item__box">
+                  <a class="product-item__name" href="#">
+                    <h4 class="product-item__title">
+                      Women's clothing
+                    </h4>
+                  </a>
+                  <div class="product-item__buying">
+                    <div class="product-item__price">
+                      $39.00
+                    </div>
+                    <a class="product-item__buying-link" href="#">
+                      <svg version="1.2" viewBox="0 0 22 20" width="22" height="20">
+                        <path fill-rule="evenodd" fill="#29282d"
+                          d="m17.4 20c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1zm1.8-2.8h-12.8c-0.4 0-0.7-0.3-0.8-0.7l-2.7-11.1h-2.1c-0.4 0-0.8-0.3-0.8-0.8 0-0.4 0.4-0.8 0.8-0.8h2.8c0.3 0 0.7 0.3 0.8 0.6l0.7 3.1h16.1c0.2 0 0.5 0.1 0.6 0.3 0.2 0.2 0.3 0.5 0.2 0.7l-2 8.1c-0.1 0.3-0.4 0.6-0.8 0.6zm-12.2-1.7h11.5l1.6-6.4h-14.6zm0.4 8.3c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1z" />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="product-item__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus vitae quis aut rerum quas
+                    iusto quod perspiciatis nemo, necessitatibus voluptatibus iure dolore consequatur quaerat saepe
+                    omnis atque alias expedita.
+                  </p>
+                  <button class="product-item__btn">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link" href="#">
+                  <img class="product-item__img" src="images/product/5.jpg" alt="product">
+                </a>
+                <div class="product-item__box">
+                  <a class="product-item__name" href="#">
+                    <h4 class="product-item__title">
+                      Women's clothing
+                    </h4>
+                  </a>
+                  <div class="product-item__buying">
+                    <div class="product-item__price">
+                      $39.00
+                    </div>
+                    <a class="product-item__buying-link" href="#">
+                      <svg version="1.2" viewBox="0 0 22 20" width="22" height="20">
+                        <path fill-rule="evenodd" fill="#29282d"
+                          d="m17.4 20c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1zm1.8-2.8h-12.8c-0.4 0-0.7-0.3-0.8-0.7l-2.7-11.1h-2.1c-0.4 0-0.8-0.3-0.8-0.8 0-0.4 0.4-0.8 0.8-0.8h2.8c0.3 0 0.7 0.3 0.8 0.6l0.7 3.1h16.1c0.2 0 0.5 0.1 0.6 0.3 0.2 0.2 0.3 0.5 0.2 0.7l-2 8.1c-0.1 0.3-0.4 0.6-0.8 0.6zm-12.2-1.7h11.5l1.6-6.4h-14.6zm0.4 8.3c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1z" />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="product-item__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus vitae quis aut rerum quas
+                    iusto quod perspiciatis nemo, necessitatibus voluptatibus iure dolore consequatur quaerat saepe
+                    omnis atque alias expedita.
+                  </p>
+                  <button class="product-item__btn">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link" href="#">
+                  <img class="product-item__img" src="images/product/6.jpg" alt="product">
+                </a>
+                <div class="product-item__box">
+                  <a class="product-item__name" href="#">
+                    <h4 class="product-item__title">
+                      Women's clothing
+                    </h4>
+                  </a>
+                  <div class="product-item__buying">
+                    <div class="product-item__price">
+                      $39.00
+                    </div>
+                    <a class="product-item__buying-link" href="#">
+                      <svg version="1.2" viewBox="0 0 22 20" width="22" height="20">
+                        <path fill-rule="evenodd" fill="#29282d"
+                          d="m17.4 20c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1zm1.8-2.8h-12.8c-0.4 0-0.7-0.3-0.8-0.7l-2.7-11.1h-2.1c-0.4 0-0.8-0.3-0.8-0.8 0-0.4 0.4-0.8 0.8-0.8h2.8c0.3 0 0.7 0.3 0.8 0.6l0.7 3.1h16.1c0.2 0 0.5 0.1 0.6 0.3 0.2 0.2 0.3 0.5 0.2 0.7l-2 8.1c-0.1 0.3-0.4 0.6-0.8 0.6zm-12.2-1.7h11.5l1.6-6.4h-14.6zm0.4 8.3c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1z" />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="product-item__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus vitae quis aut rerum quas
+                    iusto quod perspiciatis nemo, necessitatibus voluptatibus iure dolore consequatur quaerat saepe
+                    omnis atque alias expedita.
+                  </p>
+                  <button class="product-item__btn">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link" href="#">
+                  <img class="product-item__img" src="images/product/7.jpg" alt="product">
+                </a>
+                <div class="product-item__box">
+                  <a class="product-item__name" href="#">
+                    <h4 class="product-item__title">
+                      Men's clothing
+                    </h4>
+                  </a>
+                  <div class="product-item__buying">
+                    <div class="product-item__price">
+                      $39.00
+                    </div>
+                    <a class="product-item__buying-link" href="#">
+                      <svg version="1.2" viewBox="0 0 22 20" width="22" height="20">
+                        <path fill-rule="evenodd" fill="#29282d"
+                          d="m17.4 20c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1zm1.8-2.8h-12.8c-0.4 0-0.7-0.3-0.8-0.7l-2.7-11.1h-2.1c-0.4 0-0.8-0.3-0.8-0.8 0-0.4 0.4-0.8 0.8-0.8h2.8c0.3 0 0.7 0.3 0.8 0.6l0.7 3.1h16.1c0.2 0 0.5 0.1 0.6 0.3 0.2 0.2 0.3 0.5 0.2 0.7l-2 8.1c-0.1 0.3-0.4 0.6-0.8 0.6zm-12.2-1.7h11.5l1.6-6.4h-14.6zm0.4 8.3c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1z" />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="product-item__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus vitae quis aut rerum quas
+                    iusto quod perspiciatis nemo, necessitatibus voluptatibus iure dolore consequatur quaerat saepe
+                    omnis atque alias expedita.
+                  </p>
+                  <button class="product-item__btn">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link" href="#">
+                  <img class="product-item__img" src="images/product/8.jpg" alt="product">
+                </a>
+                <div class="product-item__box">
+                  <a class="product-item__name" href="#">
+                    <h4 class="product-item__title">
+                      Men's clothing
+                    </h4>
+                  </a>
+                  <div class="product-item__buying">
+                    <div class="product-item__price">
+                      $39.00
+                    </div>
+                    <a class="product-item__buying-link" href="#">
+                      <svg version="1.2" viewBox="0 0 22 20" width="22" height="20">
+                        <path fill-rule="evenodd" fill="#29282d"
+                          d="m17.4 20c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1zm1.8-2.8h-12.8c-0.4 0-0.7-0.3-0.8-0.7l-2.7-11.1h-2.1c-0.4 0-0.8-0.3-0.8-0.8 0-0.4 0.4-0.8 0.8-0.8h2.8c0.3 0 0.7 0.3 0.8 0.6l0.7 3.1h16.1c0.2 0 0.5 0.1 0.6 0.3 0.2 0.2 0.3 0.5 0.2 0.7l-2 8.1c-0.1 0.3-0.4 0.6-0.8 0.6zm-12.2-1.7h11.5l1.6-6.4h-14.6zm0.4 8.3c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1z" />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="product-item__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus vitae quis aut rerum quas
+                    iusto quod perspiciatis nemo, necessitatibus voluptatibus iure dolore consequatur quaerat saepe
+                    omnis atque alias expedita.
+                  </p>
+                  <button class="product-item__btn">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link" href="#">
+                  <img class="product-item__img" src="images/product/9.jpg" alt="product">
+                </a>
+                <div class="product-item__box">
+                  <a class="product-item__name" href="#">
+                    <h4 class="product-item__title">
+                      Women's clothing
+                    </h4>
+                  </a>
+                  <div class="product-item__buying">
+                    <div class="product-item__price">
+                      $39.00
+                    </div>
+                    <a class="product-item__buying-link" href="#">
+                      <svg version="1.2" viewBox="0 0 22 20" width="22" height="20">
+                        <path fill-rule="evenodd" fill="#29282d"
+                          d="m17.4 20c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1zm1.8-2.8h-12.8c-0.4 0-0.7-0.3-0.8-0.7l-2.7-11.1h-2.1c-0.4 0-0.8-0.3-0.8-0.8 0-0.4 0.4-0.8 0.8-0.8h2.8c0.3 0 0.7 0.3 0.8 0.6l0.7 3.1h16.1c0.2 0 0.5 0.1 0.6 0.3 0.2 0.2 0.3 0.5 0.2 0.7l-2 8.1c-0.1 0.3-0.4 0.6-0.8 0.6zm-12.2-1.7h11.5l1.6-6.4h-14.6zm0.4 8.3c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.8 2.7-2.8 1.5 0 2.8 1.3 2.8 2.8 0 1.5-1.3 2.7-2.8 2.7zm0-3.8c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1 0.6 0 1.1-0.5 1.1-1.1 0-0.6-0.5-1.1-1.1-1.1z" />
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="product-item__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus vitae quis aut rerum quas
+                    iusto quod perspiciatis nemo, necessitatibus voluptatibus iure dolore consequatur quaerat saepe
+                    omnis atque alias expedita.
+                  </p>
+                  <button class="product-item__btn">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="pagination">
+              <a class="pagination__arrows pagination__prev" href="#">
+                Previous
+              </a>
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--active" href="#">
+                    1
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">
+                    2
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">
+                    3
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <span class="pagination__link" href="#">
+                    ...
+                  </span>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">
+                    15
+                  </a>
+                </li>
+              </ul>
+              <a class="pagination__arrows pagination__next" href="#">
+                Next
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__item footer-top__contact">
+          <a class="logo footer-top__logo" href="#">
+            <img class="logo__img" src="images/logo.jpg" alt="logo">
+          </a>
+          <a class="footer-top__address" href="https://goo.gl/maps/emmKr5U1e63kHf4d6" target="_blank">
+            Arai Housing complex, No.137, Zharokov street, Almaty, 050000, Kazakhstan
+          </a>
+          <a class="footer-top__email" href="mailto:orazali2017@gmail.com" target="_blank">
+            orazali2017@gmail.com
+          </a>
+          <a class="footer-top__phone" href="tel:+77076692268" target="_blank">
+            +7 707 669 22 68
+          </a>
+          <ul class="footer-top__social-list">
+            <li class="footer-top__social-item">
+              <a class="footer-top__social-link" href="https://web.facebook.com" target="_blank">
+                <svg width="11px" height="18px" viewBox="0 0 11 17" version="1.1">
+                  <g id="surface1">
+                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
+                      d="M 9.59375 9.5625 L 10.085938 6.484375 L 7.027344 6.484375 L 7.027344 4.488281 C 7.027344 3.648438 7.453125 2.828125 8.824219 2.828125 L 10.214844 2.828125 L 10.214844 0.207031 C 10.214844 0.207031 8.953125 0 7.746094 0 C 5.230469 0 3.585938 1.472656 3.585938 4.140625 L 3.585938 6.484375 L 0.785156 6.484375 L 0.785156 9.5625 L 3.585938 9.5625 L 3.585938 17 L 7.027344 17 L 7.027344 9.5625 Z M 9.59375 9.5625 " />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-top__social-item">
+              <a class="footer-top__social-link" href="https://twitter.com" target="_blank">
+                <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1">
+                  <g id="surface1">
+                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
+                      d="M 16.148438 5.332031 C 16.160156 5.492188 16.160156 5.652344 16.160156 5.8125 C 16.160156 10.691406 12.449219 16.308594 5.664062 16.308594 C 3.574219 16.308594 1.632812 15.703125 0 14.652344 C 0.296875 14.6875 0.582031 14.699219 0.890625 14.699219 C 2.617188 14.699219 4.203125 14.117188 5.472656 13.125 C 3.847656 13.089844 2.488281 12.027344 2.023438 10.566406 C 2.25 10.597656 2.476562 10.621094 2.71875 10.621094 C 3.050781 10.621094 3.378906 10.574219 3.6875 10.496094 C 2 10.152344 0.730469 8.667969 0.730469 6.875 L 0.730469 6.828125 C 1.222656 7.105469 1.792969 7.277344 2.398438 7.296875 C 1.40625 6.636719 0.753906 5.503906 0.753906 4.226562 C 0.753906 3.539062 0.9375 2.914062 1.257812 2.363281 C 3.074219 4.601562 5.800781 6.066406 8.863281 6.226562 C 8.804688 5.949219 8.773438 5.664062 8.773438 5.378906 C 8.773438 3.347656 10.417969 1.691406 12.460938 1.691406 C 13.523438 1.691406 14.480469 2.136719 15.15625 2.855469 C 15.988281 2.695312 16.789062 2.386719 17.496094 1.964844 C 17.222656 2.820312 16.640625 3.539062 15.875 3.996094 C 16.617188 3.917969 17.335938 3.710938 18 3.425781 C 17.496094 4.15625 16.871094 4.808594 16.148438 5.332031 Z M 16.148438 5.332031 " />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-top__social-item">
+              <a class="footer-top__social-link" href="https://www.linkedin.com" target="_blank">
+                <svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1">
+                  <g id="surface1">
+                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
+                      d="M 3.582031 15.75 L 0.265625 15.75 L 0.265625 5.234375 L 3.582031 5.234375 Z M 1.921875 3.800781 C 0.859375 3.800781 0 2.9375 0 1.890625 C 0 0.847656 0.859375 0 1.921875 0 C 2.980469 0 3.84375 0.847656 3.84375 1.890625 C 3.84375 2.9375 2.980469 3.800781 1.921875 3.800781 Z M 15.996094 15.75 L 12.6875 15.75 L 12.6875 10.632812 C 12.6875 9.410156 12.660156 7.847656 10.960938 7.847656 C 9.238281 7.847656 8.972656 9.171875 8.972656 10.542969 L 8.972656 15.75 L 5.660156 15.75 L 5.660156 5.234375 L 8.839844 5.234375 L 8.839844 6.667969 L 8.886719 6.667969 C 9.328125 5.84375 10.410156 4.972656 12.027344 4.972656 C 15.382812 4.972656 16 7.148438 16 9.972656 L 16 15.75 Z M 15.996094 15.75 " />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-top__social-item">
+              <a class="footer-top__social-link" href="https://www.instagram.com" target="_blank">
+                <svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1">
+                  <g id="surface1">
+                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
+                      d="M 8.003906 4.957031 C 5.730469 4.957031 3.898438 6.761719 3.898438 8.996094 C 3.898438 11.234375 5.730469 13.035156 8.003906 13.035156 C 10.273438 13.035156 12.105469 11.234375 12.105469 8.996094 C 12.105469 6.761719 10.273438 4.957031 8.003906 4.957031 Z M 8.003906 11.621094 C 6.535156 11.621094 5.335938 10.445312 5.335938 8.996094 C 5.335938 7.546875 6.53125 6.371094 8.003906 6.371094 C 9.476562 6.371094 10.671875 7.546875 10.671875 8.996094 C 10.671875 10.445312 9.472656 11.621094 8.003906 11.621094 Z M 13.230469 4.792969 C 13.230469 5.316406 12.804688 5.734375 12.273438 5.734375 C 11.742188 5.734375 11.316406 5.3125 11.316406 4.792969 C 11.316406 4.273438 11.746094 3.851562 12.273438 3.851562 C 12.804688 3.851562 13.230469 4.273438 13.230469 4.792969 Z M 15.949219 5.75 C 15.890625 4.484375 15.597656 3.367188 14.65625 2.445312 C 13.722656 1.527344 12.585938 1.238281 11.304688 1.175781 C 9.980469 1.101562 6.019531 1.101562 4.699219 1.175781 C 3.421875 1.234375 2.285156 1.523438 1.347656 2.445312 C 0.40625 3.363281 0.117188 4.484375 0.0546875 5.746094 C -0.0195312 7.046875 -0.0195312 10.945312 0.0546875 12.246094 C 0.113281 13.507812 0.40625 14.625 1.347656 15.546875 C 2.285156 16.46875 3.417969 16.753906 4.699219 16.820312 C 6.019531 16.894531 9.980469 16.894531 11.304688 16.820312 C 12.585938 16.757812 13.722656 16.472656 14.65625 15.546875 C 15.59375 14.625 15.886719 13.507812 15.949219 12.246094 C 16.023438 10.945312 16.023438 7.050781 15.949219 5.75 Z M 14.242188 13.640625 C 13.964844 14.328125 13.425781 14.859375 12.722656 15.136719 C 11.667969 15.550781 9.167969 15.453125 8.003906 15.453125 C 6.839844 15.453125 4.335938 15.546875 3.285156 15.136719 C 2.585938 14.863281 2.046875 14.332031 1.765625 13.640625 C 1.347656 12.601562 1.441406 10.140625 1.441406 8.996094 C 1.441406 7.851562 1.351562 5.386719 1.765625 4.351562 C 2.042969 3.664062 2.582031 3.132812 3.285156 2.855469 C 4.339844 2.445312 6.839844 2.539062 8.003906 2.539062 C 9.167969 2.539062 11.671875 2.445312 12.722656 2.855469 C 13.421875 3.128906 13.960938 3.660156 14.242188 4.351562 C 14.660156 5.390625 14.5625 7.851562 14.5625 8.996094 C 14.5625 10.140625 14.660156 12.605469 14.242188 13.640625 Z M 14.242188 13.640625 " />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-top__social-item">
+              <a class="footer-top__social-link" href="https://www.pinterest.com" target="_blank">
+                <svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1">
+                  <g id="surface1">
+                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
+                      d="M 7.4375 0.226562 C 3.695312 0.226562 0 2.632812 0 6.523438 C 0 9 1.445312 10.40625 2.320312 10.40625 C 2.679688 10.40625 2.886719 9.4375 2.886719 9.160156 C 2.886719 8.835938 2.023438 8.140625 2.023438 6.777344 C 2.023438 3.953125 4.253906 1.949219 7.140625 1.949219 C 9.625 1.949219 11.460938 3.308594 11.460938 5.808594 C 11.460938 7.675781 10.6875 11.175781 8.171875 11.175781 C 7.261719 11.175781 6.484375 10.542969 6.484375 9.636719 C 6.484375 8.308594 7.449219 7.019531 7.449219 5.648438 C 7.449219 3.320312 4.023438 3.742188 4.023438 6.554688 C 4.023438 7.148438 4.101562 7.800781 4.375 8.339844 C 3.871094 10.425781 2.84375 13.539062 2.84375 15.691406 C 2.84375 16.355469 2.941406 17.007812 3.007812 17.671875 C 3.132812 17.804688 3.070312 17.792969 3.257812 17.726562 C 5.097656 15.300781 5.03125 14.824219 5.863281 11.652344 C 6.3125 12.472656 7.46875 12.917969 8.390625 12.917969 C 12.261719 12.917969 14 9.277344 14 5.996094 C 14 2.507812 10.871094 0.226562 7.4375 0.226562 Z M 7.4375 0.226562 " />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__nav">
+          <h6 class="footer-top__title">
+            Useful links
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                About us
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Privacy policy
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Terms & conditions
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Contact us
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Help & support
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__nav">
+          <h6 class="footer-top__title">
+            My account
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                My account
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                My cart
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                My wishlist
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Registration
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Check out
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__item-form">
+          <h6 class="footer-top__title">
+            Subscribe our newsletter
+          </h6>
+          <p class="footer-top__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__form-input" type="email" placeholder="Your email address" required>
+            <button class="footer-top__form-btn" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">
+          © 2023 ClothingStore. All rights reserved.
+        </p>
+        <div class="footer-bottom__accept">
+          <p class="footer-bottom__accept-text">
+            We accept
+          </p>
+          <ul class="footer-bottom__accept-list">
+            <li class="footer-bottom__accept-item">
+              <a class="footer-bottom__accept-link" href="https://www.mastercard.com/global/en.html" target="_blank">
+                <img class="footer-bottom__accept-img" src="images/icons/mastercard.png" alt="MasterCard">
+              </a>
+            </li>
+            <li class="footer-bottom__accept-item">
+              <a class="footer-bottom__accept-link" href="https://usa.visa.com/" target="_blank">
+                <img class="footer-bottom__accept-img" src="images/icons/visa.png" alt="Visa">
+              </a>
+            </li>
+            <li class="footer-bottom__accept-item">
+              <a class="footer-bottom__accept-link" href="https://www.paypal.com" target="_blank">
+                <img class="footer-bottom__accept-img" src="images/icons/paypal.png" alt="PayPal">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

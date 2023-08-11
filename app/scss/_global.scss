@@ -23,8 +23,7 @@ body {
 
 a {
   color: #000;
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 18px;
   @extend %quicksand-500;
 }
 
@@ -77,7 +76,7 @@ a {
     padding-left: 15px;
 
     &::before {
-      background-image: url('../images/icons/angle-prev.svg');
+      background-image: url('../images/icons/arrow-prev.svg');
       left: 0;
     }
   }
@@ -86,7 +85,7 @@ a {
     padding-right: 15px;
 
     &::before {
-      background-image: url('../images/icons/angle-next.svg');
+      background-image: url('../images/icons/arrow-next.svg');
       right: 0;
     }
   }

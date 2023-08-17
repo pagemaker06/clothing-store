@@ -5,7 +5,7 @@ body {
 
 body {
   font-size: 17px;
-  line-height: 26px;
+  line-height: 24px;
   @extend %quicksand-500;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ a {
   text-align: center;
   @extend %roboto-700;
   font-size: 34px;
-  line-height: 51px;
+  line-height: 50px;
   color: $title;
   margin-bottom: 10px;
 }

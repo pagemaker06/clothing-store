@@ -140,7 +140,7 @@
     @extend %roboto-400;
     margin: 22px 0 24px;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
   }
 
   &__list-link {
@@ -249,7 +249,7 @@
 
   &__link {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
     padding-bottom: 1px;
     border-bottom: 1px solid transparent;
     transition: all .3s;
@@ -373,7 +373,7 @@
     margin: 10px 0;
     color: $title;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
     @extend %roboto-400;
   }
 }
@@ -401,7 +401,7 @@
   &__item-title {
     color: $title;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
     @extend %roboto-400;
     transition: all .3s;
   }
@@ -441,7 +441,7 @@
   }
 
   &__play-img {
-    width: 70px;
+    width: 80px;
   }
 
   &__content {
@@ -682,54 +682,11 @@
     padding: 25px;
   }
 
-  &__item-info {
-    display: flex;
-    align-items: center;
-  }
-
-  &__item-author,
-  &__item-date {
-    padding-left: 32px;
-    position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-
-  &__item-author {
-    margin-right: 25px;
-    transition: all .3s;
-
-    &::before {
-      background-image: url('../images/icons/user.svg');
-      transition: all .3s;
-    }
-  }
-
-  &__item-author:hover {
-    color: $accent;
-
-    &::before {
-      background-image: url('../images/icons/user-accent.svg');
-    }
-  }
-
-  &__item-date::before {
-    background-image: url('../images/icons/time.svg');
-  }
-
   &__item-title {
     margin: 8px 0;
     color: $title;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
     @extend %roboto-400;
     transition: all .3s;
 
@@ -748,6 +705,53 @@
   }
 }
 
+.blog-box {
+  display: flex;
+  align-items: center;
+
+  &__author,
+  &__date {
+    padding-left: 32px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__author {
+    margin-right: 25px;
+    transition: all .3s;
+
+    &::before {
+      background-image: url('../images/icons/user.svg');
+      transition: all .3s;
+    }
+  }
+
+  &__author:hover {
+    color: $accent;
+
+    &::before {
+      background-image: url('../images/icons/user-accent.svg');
+    }
+  }
+
+  &__date {
+    font-size: 18px;
+
+    &::before {
+      background-image: url('../images/icons/time.svg');
+    }
+  }
+}
+
 .modal {
   padding: 60px 0;
   max-width: 460px;
@@ -760,7 +764,7 @@
 
   &__link {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
     padding-bottom: 1px;
     border-bottom: 1px solid transparent;
     transition: all .3s;
@@ -821,7 +825,7 @@
   &__num {
     @extend %roboto-700;
     font-size: 40px;
-    line-height: 60px;
+    line-height: 58px;
     color: $title;
   }
 
@@ -862,7 +866,7 @@
   &__title {
     color: $title;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
     @extend %roboto-400;
     margin-bottom: 10px;
   }
@@ -1184,7 +1188,7 @@
     margin-bottom: 20px;
     color: $title;
     font-size: 22px;
-    line-height: 33px;
+    line-height: 30px;
     @extend %roboto-400;
   }
 
@@ -1403,7 +1407,7 @@
 
   &__top-item {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
 
     &+.product-tabs__top-item {
       margin-left: 40px;
@@ -1459,6 +1463,7 @@
     display: flex;
     margin-bottom: 4px;
     font-size: 18px;
+    align-items: center;
   }
 
   &__name {
@@ -1472,7 +1477,7 @@
   &__title {
     margin-bottom: 15px;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
   }
 
   &__box-input {
@@ -1519,6 +1524,158 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+  }
+}
+
+.blog-page {
+  padding: 60px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 770px;
+    margin-right: 30px;
+  }
+
+  &__aside {
+    width: 370px;
+
+    .filter-search__input {
+      max-width: 300px;
+    }
+  }
+
+  &__item+&__item {
+    margin-top: 25px;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__img {
+    max-width: 770px;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__item-box {
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 15px 15px 15px 20px;
+  }
+
+  &__item-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 26px;
+    color: $title;
+    @extend %roboto-400;
+    transition: all .3s;
+  }
+
+  &__item-title:hover {
+    color: $accent;
+  }
+
+  &__item-text {
+    margin-top: 15px;
+  }
+
+  &__popup {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__play {
+    transition: all .3s;
+
+    &:hover {
+      transform: scale(0.91);
+    }
+  }
+
+  &__play-img {
+    width: 84px;
+  }
+}
+
+.latest-post {
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+
+  &__title {
+    color: $title;
+    font-size: 20px;
+    line-height: 26px;
+    @extend %roboto-400;
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    display: flex;
+
+    &+.latest-post__item {
+      border-top: 1px solid #ccc;
+      padding-top: 15px;
+      margin-top: 15px;
+    }
+  }
+
+  &__item-link {
+    display: block;
+    margin-right: 15px;
+    min-width: 140px;
+    height: 140px;
+  }
+
+  &__img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__box-title {
+    color: $title;
+    font-size: 19px;
+    @extend %roboto-400;
+    margin-bottom: 12px;
+    transition: all .3s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__date {
+    font-size: 18px;
+    padding-left: 32px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/time.svg');
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 

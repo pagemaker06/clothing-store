@@ -68,7 +68,8 @@ a {
       position: absolute;
       width: 5px;
       height: 10px;
-      top: 9px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 

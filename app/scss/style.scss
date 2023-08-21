@@ -1566,20 +1566,25 @@
   &__item-box {
     border: 1px solid #ccc;
     border-top: none;
-    padding: 15px 15px 15px 20px;
+    padding: 15px;
+  }
+
+  &__item-titlelink {
+    .blog-page__item-title {
+      transition: all .3s;
+    }
+
+    .blog-page__item-title:hover {
+      color: $accent;
+    }
   }
 
   &__item-title {
-    margin-bottom: 15px;
+    margin-top: 15px;
     font-size: 20px;
     line-height: 26px;
     color: $title;
     @extend %roboto-400;
-    transition: all .3s;
-  }
-
-  &__item-title:hover {
-    color: $accent;
   }
 
   &__item-text {
@@ -1609,7 +1614,7 @@
 .latest-post {
   padding: 15px;
   border: 1px solid #ccc;
-  margin: 20px 0;
+  margin-top: 20px;
 
   &__title {
     color: $title;
@@ -1646,7 +1651,6 @@
   &__box {
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
 
   &__box-title {
@@ -1678,6 +1682,29 @@
     }
   }
 }
+
+.blog-one {
+  &__text {
+    h4 {
+      margin-top: 15px;
+      font-size: 20px;
+      line-height: 26px;
+      color: $title;
+      @extend %roboto-400;
+    }
+
+    p {
+      margin-top: 15px;
+    }
+  }
+
+  &__left-img {
+    float: right;
+    width: 433px;
+    margin: 14px 0 14px 17px;
+  }
+}
+
 
 
 

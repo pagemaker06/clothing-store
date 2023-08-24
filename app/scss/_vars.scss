@@ -24,10 +24,9 @@ $bg: #f6f6f6;
 
 %btn {
   display: inline-block;
-  padding: 4px 8px;
+  padding: 5px 8px;
   background-color: #fff;
   border: 1px solid #ccc;
-  filter: drop-shadow(0px 7px 10px rgba(192, 192, 192, 0.3));
   font-size: 18px;
   @extend %quicksand-500;
   cursor: pointer;

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
+  <title>Clothing store</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -73,7 +73,7 @@
       <div class="page__container">
         <div class="container">
           <h3 class="title page__title">
-            Register
+            Contact us
           </h3>
           <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
@@ -84,7 +84,7 @@
               </li>
               <li class="breadcrumbs__item">
                 <span class="breadcrumbs__link">
-                  Register
+                  Contact
                 </span>
               </li>
             </ul>
@@ -92,34 +92,28 @@
         </div>
       </div>
     </section>
-    <section class="modal">
+    <section class="map">
       <div class="container">
-        <div class="modal__links">
-          <span class="modal__link modal__link--active">
-            Register
-          </span>
-          <a class="modal__link" href="#">
-            Login
-          </a>
-        </div>
-        <form class="modal__form" action="#">
-          <label class="modal__label">
-            Your email address 
-            <input class="modal__input" type="text" required>
-          </label>
-          <label class="modal__label">
-            Password
-            <input class="modal__input" type="password" required>
-          </label>
-          <p class="modal__text">
-            The password will be sent to your email. Your personal information will be used to manage your account.
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.7442032370786!2d76.89657957696615!3d43.235822479324376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692348aeaf4f%3A0x183616c1f7e729f4!2z0JbQmiDQkNCg0JDQmQ!5e0!3m2!1sru!2skz!4v1692857175357!5m2!1sru!2skz"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <form class="contact__form" action="#">
+          <p class="contact__form-title">
+            Contact us
           </p>
-          <label class="modal__label">
-            <input type="checkbox">
-            Agree with terms & conditions
-          </label>
-          <button class="modal__btn" type="submit">
-            Register
+          <div class="contact__form-box">
+            <input class="contact__form-input" placeholder="Your name" type="text" required>
+            <input class="contact__form-input" placeholder="Your email address" type="email" required>
+          </div>
+          <textarea class="contact__form-textarea" placeholder="Your text" required></textarea>
+          <button class="contact__form-btn" type="submit">
+            Send message
           </button>
         </form>
       </div>
